@@ -7,7 +7,7 @@ FROM
 GROUP BY
     user_id
 ORDER BY
-    total_bookings DESC;
+    total_bookings, ROW_NUMBER() DESC;
 
 -- 2. Rank properties based on the total number of bookings using window function RANK()
 SELECT
