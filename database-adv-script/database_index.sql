@@ -1,5 +1,5 @@
 
-EXPLAIN SELECT * FROM Booking WHERE user_id = 'abc-123';
+ANALYZE SELECT * FROM Booking WHERE user_id = 'abc-123';
 
 
 -- Index on user email for fast lookup during login/authentication
