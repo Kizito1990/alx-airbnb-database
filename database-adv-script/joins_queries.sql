@@ -34,7 +34,7 @@ SELECT
     bookings.start_date,
     bookings.end_date
 FROM 
-    users
+    users ORDER BY users.user_id
 LEFT JOIN 
     bookings ON users.user_id = bookings.user_id
 
